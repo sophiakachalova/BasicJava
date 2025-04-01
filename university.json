@@ -1,0 +1,17 @@
+{
+  "name": "Test University",
+  "rector": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "middleName": "Jack",
+    "sex": "MALE"
+  },
+  "faculties": [
+    {
+      "name": "Computer Science"
+    },
+    {
+      "name": "Mathematics"
+    }
+  ]
+}

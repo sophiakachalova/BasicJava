@@ -1,10 +1,12 @@
 package edu.ntu.pzks.lr4.model;
 
+import java.util.Objects;
+
 public class Human {
-    private final String firstName;
-    private final String lastName;
-    private final String middleName;
-    private final Sex sex;
+    private String firstName;
+    private String lastName;
+    private String middleName;
+    private Sex sex;
 
     public Human(String firstName, String lastName, String middleName, Sex sex) {
         this.firstName = firstName;
@@ -12,4 +14,21 @@ public class Human {
         this.middleName = middleName;
         this.sex = sex;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Human human = (Human) o;
+        return Objects.equals(firstName, human.firstName) &&
+                Objects.equals(lastName, human.lastName) &&
+                Objects.equals(middleName, human.middleName) &&
+                sex == human.sex;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, middleName, sex);
+    }
 }
+

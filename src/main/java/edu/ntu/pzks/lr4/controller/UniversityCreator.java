@@ -12,8 +12,8 @@ public class UniversityCreator {
         // Створюємо факультети
         Human dean1 = new Human("Петро", "Петров", "Петрович", Sex.MALE);
         Human dean2 = new Human("Марія", "Марченко", "Іванівна", Sex.FEMALE);
-        Faculty faculty1 = new Faculty("Факультет комп'ютерних наук", dean1);
-        Faculty faculty2 = new Faculty("Факультет електроніки", dean2);
+        Faculty faculty1 = new Faculty("Факультет комп'ютерних наук");
+        Faculty faculty2 = new Faculty("Факультет електроніки");
 
         List<Faculty> faculties = Arrays.asList(faculty1, faculty2);
 
