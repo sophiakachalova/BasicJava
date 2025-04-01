@@ -15,10 +15,9 @@ import java.util.List;
 public class UniversityJsonTest {
     @Test
     public void testJsonSerialization() throws IOException {
-        // Create an empty list of Faculty (or add some Faculties if needed)
         List<Faculty> faculties = Collections.emptyList();
 
-        // Create University with the correct constructor
+
         University oldUniversity = new University("Test University",
                 new Human("John", "Doe", "Middle", Sex.MALE),
                 faculties);
