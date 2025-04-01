@@ -5,3 +5,4 @@ public class Faculty extends StructureUnit {
         super(name, head);
     }
 }
+
