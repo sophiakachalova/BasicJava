@@ -8,26 +8,25 @@ import edu.ntu.pzks.lr4.model.University;
 import edu.ntu.pzks.lr4.utils.JsonManager;
 import java.io.IOException;
 import edu.ntu.pzks.lr4.model.Faculty;
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
 
 public class UniversityJsonTest {
     @Test
     public void testJsonSerialization() throws IOException {
-        List<Faculty> faculties = new ArrayList<>();
-        University oldUniversity = new University("University",
-                new Human("John", "Cruz", "Jack", Sex.MALE),
+        // Create an empty list of Faculty (or add some Faculties if needed)
+        List<Faculty> faculties = Collections.emptyList();
+
+        // Create University with the correct constructor
+        University oldUniversity = new University("Test University",
+                new Human("John", "Doe", "Middle", Sex.MALE),
                 faculties);
+
         JsonManager.saveToFile("university.json", oldUniversity);
         University newUniversity = JsonManager.loadFromFile("university.json", University.class);
-
-
-        System.out.println("Old: " + oldUniversity);
-        System.out.println("New: " + newUniversity);
 
         assertEquals(oldUniversity, newUniversity);
     }
 }
-
-
 
