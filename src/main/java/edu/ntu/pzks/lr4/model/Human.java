@@ -52,4 +52,3 @@ public class Human {
         return firstName + " " + middleName + " " + lastName + " (" + sex + ")";
     }
 }
-

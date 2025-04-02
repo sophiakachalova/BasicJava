@@ -1,10 +1,3 @@
-package edu.ntu.pzks.lr4.tests;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import edu.ntu.pzks.lr4.model.Human;
-import edu.ntu.pzks.lr4.model.Sex;
-import edu.ntu.pzks.lr4.model.University;
 import edu.ntu.pzks.lr4.utils.JsonManager;
 import java.io.IOException;
 import edu.ntu.pzks.lr4.model.Faculty;
@@ -29,6 +22,4 @@ public class UniversityJsonTest {
         assertEquals(oldUniversity, newUniversity);
     }
 }
-
-
 
