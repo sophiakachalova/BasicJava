@@ -3,16 +3,32 @@ package edu.ntu.pzks.lr4.model;
 import java.util.Objects;
 
 public class Human {
-    private String firstName;
-    private String lastName;
-    private String middleName;
-    private Sex sex;
+    private final String firstName;
+    private final String lastName;
+    private final String middleName;
+    private final Sex sex;
 
     public Human(String firstName, String lastName, String middleName, Sex sex) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
         this.sex = sex;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public Sex getSex() {
+        return sex;
     }
 
     @Override
@@ -30,5 +46,9 @@ public class Human {
     public int hashCode() {
         return Objects.hash(firstName, lastName, middleName, sex);
     }
-}
 
+    @Override
+    public String toString() {
+        return firstName + " " + middleName + " " + lastName + " (" + sex + ")";
+    }
+}

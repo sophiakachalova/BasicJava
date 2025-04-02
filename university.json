@@ -1,17 +1,10 @@
 {
-  "name": "Test University",
-  "rector": {
+  "faculties": [],
+  "name": "University",
+  "head": {
     "firstName": "John",
-    "lastName": "Doe",
+    "lastName": "Cruz",
     "middleName": "Jack",
     "sex": "MALE"
-  },
-  "faculties": [
-    {
-      "name": "Computer Science"
-    },
-    {
-      "name": "Mathematics"
-    }
-  ]
+  }
 }
