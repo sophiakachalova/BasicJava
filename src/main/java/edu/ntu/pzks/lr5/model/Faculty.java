@@ -1,4 +1,4 @@
-package edu.ntu.pzks.lr4.model;
+package edu.ntu.pzks.lr5.model;
 
 import java.util.Objects;
 
@@ -21,5 +21,4 @@ public class Faculty extends StructureUnit {
         return Objects.hash(name, head);
     }
 }
-
 
