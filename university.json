@@ -1,0 +1,10 @@
+{
+  "faculties": [],
+  "name": "University",
+  "head": {
+    "firstName": "John",
+    "lastName": "Cruz",
+    "middleName": "Jack",
+    "sex": "MALE"
+  }
+}
